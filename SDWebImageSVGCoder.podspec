@@ -34,6 +34,6 @@ TODO: Add long description of the pod here.
   s.module_map = 'SDWebImageSVGCoder/Module/SDWebImageSVGCoder.modulemap'
   
   s.dependency 'SDWebImage/Core', '>= 5.0.0-beta4'
-  s.dependency 'SVGKit', :git => 'https://github.com/mureatencio/SVGKit', :branch => 'Mobilize_stable'
+  #s.dependency 'SVGKit', :git => 'https://github.com/mureatencio/SVGKit', :branch => 'Mobilize_stable'
 
 end
