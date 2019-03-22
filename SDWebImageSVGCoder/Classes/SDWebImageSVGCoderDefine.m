@@ -6,7 +6,7 @@
 //
 
 #import "SDWebImageSVGCoderDefine.h"
-#import <SVGKit/SVGKit.h>
+#import "SVGKit.h"
 
 #if SD_UIKIT
 void SDAdjustSVGContentMode(SVGKImage * svgImage, UIViewContentMode contentMode, CGSize viewSize) {

@@ -7,7 +7,7 @@
 
 #import "SDImageSVGCoder.h"
 #import "SDWebImageSVGCoderDefine.h"
-#import <SVGKit/SVGKit.h>
+#import "SVGKit.h"
 
 #define kSVGTagEnd @"</svg>"
 

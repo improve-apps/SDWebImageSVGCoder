@@ -6,7 +6,7 @@
 //
 
 #import <SDWebImage/SDWebImage.h>
-#import <SVGKit/SVGKit.h>
+#import "SVGKit.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
