@@ -31,8 +31,24 @@ TODO: Add long description of the pod here.
   s.osx.deployment_target = '10.10'
 
   s.source_files = 'SDWebImageSVGCoder/Classes/**/*', 'SDWebImageSVGCoder/Module/SDWebImageSVGCoder.h'
+
+  s.prefix_header_file = 'SDWebImageSVGCoder/SDWebImageSVGCoder-Prefix.pch'
+
   s.module_map = 'SDWebImageSVGCoder/Module/SDWebImageSVGCoder.modulemap'
   
+  s.ios.exclude_files = 'Source/AppKit additions/*.{h,m}', 'Source/Exporters/SVGKExporterNSImage.{h,m}'
+  s.tvos.exclude_files = 'Source/AppKit additions/*.{h,m}', 'Source/Exporters/SVGKExporterNSImage.{h,m}'
+  s.osx.exclude_files = 'Source/Exporters/SVGKExporterUIImage.{h,m}'
+  s.libraries = 'xml2'
+  s.framework = 'QuartzCore', 'CoreText'
+
+  s.dependency 'CocoaLumberjack', '~> 3.0'
   s.dependency 'SDWebImage/Core', '>= 5.0.0-beta4'
-  s.dependency 'SVGKit', '2.1.0'
+
+  s.requires_arc = true
+  s.xcconfig = {
+    'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++11',
+    'CLANG_CXX_LIBRARY' => 'libc++',
+    'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'
+  }
 end
